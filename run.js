@@ -14,34 +14,52 @@ for(let i=0; i<16; i++){
     write('\n');
 }
 
-write(boxen(chalk.magenta.bgCyan.italic('dogboy'), {
-    padding: 2,
-    margin: 5,
-    borderStyle:'doubleSingle',
-    title:'MM21',
-    titleAlignment:'center'
-    
-}));
-write(boxen(chalk.blue.bgGreen.bold('dogboy'), {
-    padding: 3,
-    margin: 1
-}));
-write(boxen(chalk.blue.bgGreenBright.underline('dogboy'), {
-    padding: 2,
-    margin: 2
-}));
-write(boxen(chalk.cyan.bgBlackBright.strikethrough('dogboy'), {
+write(boxen(chalk.black.bgGreen('marten :3'), {
     padding: 1,
-    margin: 1
+    margin: 1,
+    borderStyle: 'arrow', 
+    title: 'Привет', 
+    titleAlignment: 'top'
+
 }));
-write(boxen(chalk.blue.bgRedBright.dim('dogboy'), {
+
+write(boxen(chalk.white.bgRedBright('Pipenberg'), {
     padding: 1,
-    margin: 6
+    margin: 1,
+    title: 'меня', 
+    titleAlignment: 'bottom'
+
+
 }));
-write(boxen(chalk.red.bgBlue.hidden('dogboy'), {
-    padding: .09,
-    margin: .1,
-   borderStyle:'arrow',
-   title:'Henri',
-   titleAlignment:'center'
+
+write(boxen(chalk.black.bgRed.underline('MM21'), {
+    padding: 0.5,
+    margin: 4,
+    borderStyle: 'double', 
+    title: 'зовут', 
+    titleAlignment: 'right'
+
+}));
+
+write(boxen(chalk.black.bgWhite.italic('LEARNTERMINAL'), {
+    padding: 1.5,
+    margin: 2,
+    borderStyle: 'double', 
+}));
+
+write(boxen(chalk.white.bgBlue.bold('LEARNTERMINAL'), {
+    padding: 8,
+    margin: 3.5,
+    borderStyle: 'classic',
+    title: 'Marten', 
+    titleAlignment: 'center'
+
+}));
+write(boxen(chalk.white.bgGray.blueBright('08.11.2022'), {
+    padding: 0.25,
+    margin: 12,
+    title: 'Pipenberg', 
+    titleAlignment: 'left',
+    borderStyle: 'double', 
+
 }));
